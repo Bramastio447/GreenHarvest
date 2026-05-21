@@ -323,7 +323,7 @@ export default function SellerProdukPage() {
             data-testid="add-product-btn"
             className="bg-harvest-gold text-harvest-soil hover:bg-harvest-amber"
           >
-            <Link href="/seller/produk/baru">
+            <Link href="/seller/produk/tambah">
               <Plus className="h-4 w-4" />
               Tambah Produk
             </Link>
@@ -518,7 +518,7 @@ export default function SellerProdukPage() {
                         </Button>
                       )}
                       <Button asChild size="sm">
-                        <Link href="/seller/produk/baru">
+                        <Link href="/seller/produk/tambah">
                           <Plus className="h-4 w-4" />
                           Tambah Produk
                         </Link>

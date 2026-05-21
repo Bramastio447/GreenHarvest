@@ -173,7 +173,7 @@ const QUICK_ACTIONS: {
   testId: string;
 }[] = [
   {
-    href: "/seller/produk/baru",
+    href: "/seller/produk/tambah",
     label: "Tambah Produk",
     desc: "Upload hasil panen baru ke etalase",
     icon: Plus,

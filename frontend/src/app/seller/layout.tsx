@@ -196,7 +196,7 @@ export default function SellerLayout({
               className="hidden bg-harvest-gold text-harvest-soil hover:bg-harvest-amber sm:inline-flex"
               data-testid="topbar-add-product-btn"
             >
-              <Link href="/seller/produk/baru">
+              <Link href="/seller/produk/tambah">
                 <Package className="h-4 w-4" />
                 Tambah Produk
               </Link>
