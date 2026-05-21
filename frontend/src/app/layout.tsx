@@ -16,12 +16,12 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Green Harvest — Farm to Table, Reimagined",
+    default: "Green Harvest — Belanja Hasil Tani Langsung dari Petani",
     template: "%s · Green Harvest",
   },
   description:
-    "A modern marketplace connecting local growers with conscious eaters. Seasonal, sustainable, sourced with care.",
-  metadataBase: new URL("https://greenharvest.local"),
+    "Marketplace hasil tani Indonesia. Sayur, buah, beras, rempah, bibit, pupuk, dan produk UMKM pangan lokal — langsung dari petani.",
+  metadataBase: new URL("https://greenharvest.id"),
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${outfit.variable}`}>
+    <html lang="id" className={`${fraunces.variable} ${outfit.variable}`}>
       <body className="min-h-screen flex flex-col">{children}</body>
     </html>
   );
