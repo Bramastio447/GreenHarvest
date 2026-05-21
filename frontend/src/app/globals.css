@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 39 32% 93%;
+    --foreground: 30 18% 14%;
+
+    --card: 40 36% 96%;
+    --card-foreground: 30 18% 14%;
+
+    --popover: 40 36% 96%;
+    --popover-foreground: 30 18% 14%;
+
+    --primary: 96 24% 28%;
+    --primary-foreground: 40 36% 96%;
+
+    --secondary: 35 30% 88%;
+    --secondary-foreground: 30 18% 14%;
+
+    --muted: 35 18% 86%;
+    --muted-foreground: 30 8% 36%;
+
+    --accent: 22 86% 40%;
+    --accent-foreground: 40 36% 96%;
+
+    --destructive: 0 72% 42%;
+    --destructive-foreground: 40 36% 96%;
+
+    --border: 32 18% 80%;
+    --input: 32 18% 80%;
+    --ring: 96 24% 28%;
+
+    --radius: 0.25rem;
+  }
+
+  .dark {
+    --background: 30 12% 8%;
+    --foreground: 40 30% 92%;
+
+    --card: 30 12% 11%;
+    --card-foreground: 40 30% 92%;
+
+    --popover: 30 12% 11%;
+    --popover-foreground: 40 30% 92%;
+
+    --primary: 88 30% 65%;
+    --primary-foreground: 30 12% 8%;
+
+    --secondary: 30 10% 16%;
+    --secondary-foreground: 40 30% 92%;
+
+    --muted: 30 10% 16%;
+    --muted-foreground: 40 12% 70%;
+
+    --accent: 22 86% 56%;
+    --accent-foreground: 30 12% 8%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 40 30% 92%;
+
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 88 30% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+  }
+  ::selection {
+    @apply bg-harvest-moss text-harvest-cream;
+  }
+}
+
+@layer utilities {
+  .grain {
+    background-image: radial-gradient(
+        circle at 25% 25%,
+        rgba(0, 0, 0, 0.04) 1px,
+        transparent 1px
+      ),
+      radial-gradient(
+        circle at 75% 75%,
+        rgba(0, 0, 0, 0.03) 1px,
+        transparent 1px
+      );
+    background-size: 6px 6px, 8px 8px;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
