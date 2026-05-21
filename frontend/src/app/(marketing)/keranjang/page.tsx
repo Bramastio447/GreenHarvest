@@ -577,13 +577,16 @@ export default function KeranjangPage() {
               </div>
 
               <Button
+                asChild
                 size="lg"
                 className="mt-5 w-full bg-harvest-gold text-harvest-soil hover:bg-harvest-amber"
                 disabled={selectedLines.length === 0}
                 data-testid="checkout-btn"
               >
-                Lanjut ke Pembayaran
-                <ArrowRight className="h-4 w-4" />
+                <Link href="/checkout">
+                  Lanjut ke Pembayaran
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
               </Button>
 
               {/* Trust */}
@@ -615,13 +618,16 @@ export default function KeranjangPage() {
             </p>
           </div>
           <Button
+            asChild
             size="lg"
             className="bg-harvest-gold text-harvest-soil hover:bg-harvest-amber"
             disabled={selectedLines.length === 0}
             data-testid="mobile-checkout-btn"
           >
-            Bayar ({selectedLines.length})
-            <ArrowRight className="h-4 w-4" />
+            <Link href="/checkout">
+              Bayar ({selectedLines.length})
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </Button>
         </div>
       </div>
