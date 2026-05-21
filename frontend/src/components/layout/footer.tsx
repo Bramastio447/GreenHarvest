@@ -9,10 +9,10 @@ const FOOTER_GROUPS = [
     title: "Belanja",
     links: [
       { href: "/kategori/sayuran", label: "Sayuran" },
-      { href: "/kategori/buah", label: "Buah-buahan" },
+      { href: "/kategori/buah-buahan", label: "Buah-buahan" },
       { href: "/kategori/beras", label: "Beras" },
       { href: "/kategori/rempah", label: "Rempah" },
-      { href: "/kategori/bibit", label: "Bibit Tanaman" },
+      { href: "/kategori/bibit-tanaman", label: "Bibit Tanaman" },
       { href: "/kategori/pupuk", label: "Pupuk" },
     ],
   },

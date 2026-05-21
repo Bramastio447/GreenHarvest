@@ -21,14 +21,14 @@ import {
 import { Button } from "@/components/ui/button";
 
 const CATEGORIES = [
-  { name: "Sayuran", icon: Carrot, tint: "bg-harvest-leaf/15 text-harvest-moss", count: "1.2rb produk" },
-  { name: "Buah-buahan", icon: Apple, tint: "bg-harvest-chili/15 text-harvest-chili", count: "860 produk" },
-  { name: "Beras", icon: Wheat, tint: "bg-harvest-gold/20 text-harvest-gold", count: "240 produk" },
-  { name: "Rempah", icon: Flame, tint: "bg-orange-100 text-orange-700", count: "510 produk" },
-  { name: "Bibit Tanaman", icon: Sprout, tint: "bg-lime-100 text-lime-700", count: "320 produk" },
-  { name: "Pupuk", icon: FlaskConical, tint: "bg-amber-100 text-amber-700", count: "180 produk" },
-  { name: "Produk Organik", icon: Leaf, tint: "bg-emerald-100 text-emerald-700", count: "450 produk" },
-  { name: "UMKM Pangan", icon: ShoppingBag, tint: "bg-rose-100 text-rose-700", count: "690 produk" },
+  { name: "Sayuran", slug: "sayuran", icon: Carrot, tint: "bg-harvest-leaf/15 text-harvest-moss", count: "1.2rb produk" },
+  { name: "Buah-buahan", slug: "buah-buahan", icon: Apple, tint: "bg-harvest-chili/15 text-harvest-chili", count: "860 produk" },
+  { name: "Beras", slug: "beras", icon: Wheat, tint: "bg-harvest-gold/20 text-harvest-gold", count: "240 produk" },
+  { name: "Rempah", slug: "rempah", icon: Flame, tint: "bg-orange-100 text-orange-700", count: "510 produk" },
+  { name: "Bibit Tanaman", slug: "bibit-tanaman", icon: Sprout, tint: "bg-lime-100 text-lime-700", count: "320 produk" },
+  { name: "Pupuk", slug: "pupuk", icon: FlaskConical, tint: "bg-amber-100 text-amber-700", count: "180 produk" },
+  { name: "Produk Organik", slug: "produk-organik", icon: Leaf, tint: "bg-emerald-100 text-emerald-700", count: "450 produk" },
+  { name: "UMKM Pangan", slug: "umkm-pangan", icon: ShoppingBag, tint: "bg-rose-100 text-rose-700", count: "690 produk" },
 ];
 
 const PROMO_PRODUCTS = [
@@ -356,8 +356,8 @@ export default function HomePage() {
             {CATEGORIES.map((cat) => (
               <Link
                 key={cat.name}
-                href={`/kategori/${cat.name.toLowerCase().replace(/\s+/g, "-")}`}
-                data-testid={`category-${cat.name.toLowerCase().replace(/\s+/g, "-")}`}
+                href={`/kategori/${cat.slug}`}
+                data-testid={`category-${cat.slug}`}
                 className="group flex flex-col items-center gap-2 rounded-xl border border-border bg-background p-3 text-center transition-all hover:-translate-y-0.5 hover:border-harvest-moss/40 hover:shadow-md"
               >
                 <span className={`grid h-12 w-12 place-items-center rounded-full ${cat.tint} transition-transform group-hover:scale-110`}>

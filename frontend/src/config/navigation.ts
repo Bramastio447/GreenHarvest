@@ -1,10 +1,10 @@
 export const NAV_LINKS = [
-  { href: "/sayuran", label: "Sayuran" },
-  { href: "/buah", label: "Buah" },
-  { href: "/beras", label: "Beras" },
-  { href: "/rempah", label: "Rempah" },
-  { href: "/bibit", label: "Bibit" },
-  { href: "/pupuk", label: "Pupuk" },
+  { href: "/kategori/sayuran", label: "Sayuran" },
+  { href: "/kategori/buah-buahan", label: "Buah" },
+  { href: "/kategori/beras", label: "Beras" },
+  { href: "/kategori/rempah", label: "Rempah" },
+  { href: "/kategori/bibit-tanaman", label: "Bibit" },
+  { href: "/kategori/pupuk", label: "Pupuk" },
 ] as const;
 
 export const DASHBOARD_NAV = [
