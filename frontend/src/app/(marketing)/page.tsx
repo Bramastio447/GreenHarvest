@@ -272,7 +272,7 @@ export default function HomePage() {
                 className="bg-harvest-gold text-harvest-soil hover:bg-harvest-amber"
                 data-testid="hero-cta-shop"
               >
-                <Link href="/market">
+                <Link href="/produk">
                   Mulai Belanja
                   <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -514,7 +514,7 @@ export default function HomePage() {
               className="border-harvest-moss/40 text-harvest-moss hover:bg-harvest-moss/10"
               data-testid="load-more-products"
             >
-              <Link href="/market">Lihat semua produk →</Link>
+              <Link href="/produk">Lihat semua produk →</Link>
             </Button>
           </div>
         </div>

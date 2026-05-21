@@ -69,7 +69,7 @@ export function Navbar() {
             className="hidden lg:inline-flex"
             data-testid="navbar-kategori-btn"
           >
-            <Link href="/kategori">
+            <Link href="/produk">
               <LayoutGrid className="h-4 w-4" />
               Kategori
             </Link>
@@ -241,11 +241,11 @@ export function Navbar() {
           data-testid="primary-nav-strip"
         >
           <Link
-            href="/kategori"
+            href="/produk"
             className="inline-flex shrink-0 items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-harvest-moss"
           >
             <LayoutGrid className="h-3.5 w-3.5" />
-            Semua Kategori
+            Semua Produk
           </Link>
           {NAV_LINKS.map((link) => (
             <Link
