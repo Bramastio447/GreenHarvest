@@ -255,7 +255,7 @@ function SuccessScreen({
             className="bg-harvest-gold text-harvest-soil hover:bg-harvest-amber"
             data-testid="success-track-btn"
           >
-            <Link href="/dashboard">Lihat Pesanan Saya</Link>
+            <Link href="/pesanan">Lihat Pesanan Saya</Link>
           </Button>
           <Button asChild size="lg" variant="outline" data-testid="success-shop-btn">
             <Link href="/produk">
